@@ -1,0 +1,10 @@
+2022-09-07T08:43:27+00:00 CRITICAL Uncaught Error: Call to undefined function hello() in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php:523
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\reuse\dashboardWrapper.php(101): displayUserBooks()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template Dashboard.php(41): include('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include('C:\\xamppfyp\\htd...')
+#3 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#4 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#5 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 523
+
