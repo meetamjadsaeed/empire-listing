@@ -65,7 +65,7 @@ function empirelisting_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'empirelisting' ),
+			'primary' => esc_html__( 'Primary', 'empirelisting' ),
 		)
 	);
 
@@ -878,6 +878,20 @@ add_filter( 'posts_distinct', 'cf_search_distinct' );
 
   }
 
+
+  /**
+ * Register Custom Navigation Walker
+ */
+
+  if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.php' ) ) {
+    // File does not exist... return an error.
+    return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+    // File exists... require it.
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+
+  
 //ACTIVE
 //INACTIVE
 //SOLD
