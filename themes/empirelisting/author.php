@@ -298,7 +298,7 @@ if ( $comments ):
             break;
             case 4:
                $four++;
-               $xasa = $four;
+               $x = $four;
                $y = $four * 4;
                $overallRating = ( $y/$x );
                echo "Total $rating comments are: $four <br>";
