@@ -251,6 +251,141 @@ function myFunction() {
 
                      </a>
 
+                     <p>
+
+                     <?php 
+$five = 0;
+$four = 0;
+$three = 0;
+$two = 0;
+$one = 0;
+$zero = 0;
+$y = 0; // total number of order/Ratings
+$x = 0; // Caculated total ratings
+$overallRating = 0; // y/x = Overall rating
+
+$posts = get_posts(array(
+	'posts_per_page'	=> -1,
+	'post_type'			=> 'book',
+   'post_status' => 'publish',
+    'author' => $userId, 
+));
+
+if( $posts ):
+	
+	
+		
+	foreach( $posts as $post ): 
+		
+		setup_postdata( $post );
+		
+		$nested_args = array(
+         'post_id' => $post->ID
+     );
+     $comments_query = new WP_Comment_Query;
+    
+     $comments = $comments_query->query( $nested_args );
+if ( $comments ):
+ foreach ( $comments as $comment ) {
+   $rating = get_comment_meta( $comment->comment_ID, 'rating', true );
+      switch($rating){
+         case 5:
+            $five++;
+            $y = $five * 5;
+            $x = $five;
+            $overallRating = ( $y/$x );
+            echo "Total $rating comments are: $five <br>";
+            break;
+            case 4:
+               $four++;
+               $x = $four;
+               $y = $four * 4;
+               $overallRating = ( $y/$x );
+               echo "Total $rating comments are: $four <br>";
+               break;
+            case 3:
+               $three++;
+               $x = $three;
+               $y = $three * 3;
+               $overallRating = ( $y/$x );
+               echo "Total $rating comments are: $three <br>";
+               break;
+            case 2:
+               $two++;
+               $x = $two;
+               $y = $two * 2;
+               $overallRating = ( $y/$x );
+               echo "Total $rating comments are: $two <br>";
+               break;
+            case 1:
+               $one++;
+               $x = $one;
+               $y = $one * 1;
+               $overallRating = ( $y/$x );
+               echo "Total $rating comments are: $one <br>";
+               break;
+            Default:
+               $zero++;
+               $x = $zero;
+               $y = $zero * 0;
+               $overallRating = ( $y/$x );
+               echo "Total $rating comments are: $zero <br>";
+               break;
+      }
+      // echo '<p>' . $rating . '</p>';
+ }
+endif;
+
+echo "User overall Rating is: $overallRating <br>";
+	
+	 endforeach;
+
+    ?>
+
+<button type="button" class="btn btn-primary">
+                        <?php 
+                        echo "Rating: $overallRating";
+                       ?>
+
+         </button>
+
+    <?php
+	
+	wp_reset_postdata();
+
+endif;
+
+                   
+?>
+</p>
+
+<?php
+
+                     // $vote = get_comment_meta( $comment->comment_ID, 'rating', true );
+                     // echo $vote;
+                     
+                     // $args = array(
+                     //    'meta_query' => array(
+                     //       array(
+                     //          'key'   => 'rating',
+                     //          'value' => '4'
+                     //       )
+                     //    )
+                     // );
+                      
+                     // $comments_query = new WP_Comment_Query;
+                     // $comments       = $comments_query->query( $args );
+                      
+                     // if( $comments ) :
+                     //    foreach( $comments as $comment ) :
+                     //       echo $comment;
+                     //       // do stuff with comments here
+                     //    endforeach;
+                     // endif;
+                     
+                     ?>
+
+
             </div>
          </div>
          <div class="py-4 px-4">

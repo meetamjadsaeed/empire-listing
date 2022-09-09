@@ -1,0 +1,20 @@
+2022-09-09T18:07:39+00:00 CRITICAL Uncaught Error: Object of class WP_Comment could not be converted to string in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php:272
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 272
+
+2022-09-09T18:21:51+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 272
+
+2022-09-09T18:22:11+00:00 CRITICAL syntax error, unexpected token "endif" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 277
+
+2022-09-09T18:22:27+00:00 CRITICAL syntax error, unexpected token "endif" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 277
+
+2022-09-09T18:25:05+00:00 CRITICAL syntax error, unexpected end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 458
+
+2022-09-09T18:25:56+00:00 CRITICAL syntax error, unexpected end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 457
+
+2022-09-09T18:33:24+00:00 CRITICAL syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 288
+

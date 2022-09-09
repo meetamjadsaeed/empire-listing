@@ -47,6 +47,20 @@ get_header();
 
 <?php 
 
+$author = get_the_author_meta('display_name', $author_id);
+
+echo "author: $author";
+
+
+?>
+
+<?php 
+
+
+
+
+
+
 // $Object = new DateTime();  
 //     $Object->setTimezone(new DateTimeZone('Europe/Amsterdam'));
 //     $DateAndTime = $Object->format("d/m/Y");  
