@@ -94,6 +94,11 @@ if( !empty( $price ) ):
             <div class="details-box">
                <div class="ads-details-info">
                   <h2><?php the_title(); ?></h2>
+                  <?php 
+                  $paramters = array( 'postID' => get_the_ID() );
+                  $passedURL = add_query_arg( $paramters, 'http://localhost/empirelisting/compare-ads/' );
+                  ?>
+                  <a href="<?php echo $passedURL ?>" class="btn btn-common float-right">Compare</a>
                   <div class="details-meta">
                      <span><a href="#"><i class="lni-alarm-clock"></i> 7 Jan, 10:10 pm</a></span>
                      <span>
@@ -126,14 +131,6 @@ if( !empty( $price ) ):
                      }
                   </script>
                   </p>
-                     <?php
-                     
-                     // If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-                     ?>
 
                </div>
                <div class="tag-bottom">
@@ -152,6 +149,14 @@ if( !empty( $price ) ):
                         </li>
                      </ul>
                   </div>
+                  <?php
+                     
+                     // If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+                     ?>
                   <div class="float-right">
                      <div class="share">
                         <div class="social-link">
@@ -170,6 +175,7 @@ if( !empty( $price ) ):
                <div class="widget">
                   <h4 class="widget-title">Ad Posted By</h4>
                   <div class="agent-inner">
+                     
                      <div class="agent-title">
                         <div class="agent-photo">
                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/productinfo/agent.jpg" alt=""></a>

@@ -18,3 +18,45 @@ Stack trace:
 
 2022-09-09T18:33:24+00:00 CRITICAL syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 288
 
+2022-09-09T19:46:08+00:00 CRITICAL Uncaught Error: Undefined constant "passedURL" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:100
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 100
+
+2022-09-09T19:46:23+00:00 CRITICAL Uncaught Error: Undefined constant "passedURL" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:100
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 100
+
+2022-09-09T19:58:08+00:00 CRITICAL syntax error, unexpected end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 964
+
+2022-09-09T19:58:08+00:00 CRITICAL syntax error, unexpected end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 964
+
+2022-09-09T19:58:09+00:00 CRITICAL syntax error, unexpected end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 964
+
+2022-09-09T19:58:11+00:00 CRITICAL syntax error, unexpected end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 964
+
+2022-09-09T19:58:11+00:00 CRITICAL syntax error, unexpected end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 964
+
+2022-09-09T20:07:57+00:00 CRITICAL Uncaught Error: Undefined constant "postID" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template CompareAds.php:29
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template CompareAds.php on line 29
+
+2022-09-09T20:08:29+00:00 CRITICAL Uncaught Error: Undefined constant "paramters" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template CompareAds.php:29
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template CompareAds.php on line 29
+
