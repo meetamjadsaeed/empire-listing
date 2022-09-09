@@ -8,3 +8,102 @@ Stack trace:
 #5 {main}
   thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 523
 
+2022-09-07T09:34:06+00:00 CRITICAL Uncaught Error: Class "WP_Bootstrap_Navwalker" not found in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\header.php:48
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template.php(770): require_once()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\template.php(716): load_template('C:\\xamppfyp\\htd...', true, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template_Home.php(17): get_header()
+#4 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#7 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\header.php on line 48
+
+2022-09-07T10:21:51+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_field() in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php:39
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\author.php on line 39
+
+2022-09-07T10:58:40+00:00 CRITICAL syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 54
+
+2022-09-07T10:59:00+00:00 CRITICAL Uncaught Error: Undefined constant "sliderImage1" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:40
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 40
+
+2022-09-07T10:59:51+00:00 CRITICAL Uncaught Error: Undefined constant "sliderImage1" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:40
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 40
+
+2022-09-07T11:00:43+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:41
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 41
+
+2022-09-07T11:03:41+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:41
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 41
+
+2022-09-07T11:07:53+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:41
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 41
+
+2022-09-07T11:08:09+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:41
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 41
+
+2022-09-07T11:09:29+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php:41
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#3 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\single-book.php on line 41
+
+2022-09-07T11:19:36+00:00 CRITICAL Uncaught Error: Call to undefined function hello() in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php:523
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\reuse\dashboardWrapper.php(101): displayUserBooks()
+#1 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template Dashboard.php(41): include('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include('C:\\xamppfyp\\htd...')
+#3 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#4 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#5 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 523
+
+2022-09-07T12:04:32+00:00 CRITICAL Uncaught Exception: DateTimeZone::__construct(): Unknown or bad timezone (Pakistan/Karachi) in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template_testing.php:56
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template_testing.php(56): DateTimeZone->__construct('Pakistan/Karach...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\template-loader.php(106): include('C:\\xamppfyp\\htd...')
+#2 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(19): require_once('C:\\xamppfyp\\htd...')
+#3 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#4 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template_testing.php on line 56
+
+2022-09-07T12:31:29+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template_testing.php on line 99
+

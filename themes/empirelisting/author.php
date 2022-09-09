@@ -35,6 +35,9 @@
    // to get  phone number
    $phone = get_the_author_meta( 'billing_phone', $author_id );
    
+   // to get User Level
+   $userLevel =  get_field('User Level', 'user_' . $author_id);
+
    // to get  ID
    $userId = get_the_author_meta( 'ID', $author_id );
 
@@ -77,7 +80,9 @@ $profile = get_avatar_url($userId);
       <div class="bg-white shadow rounded overflow-hidden">
          <div class="px-4 pt-0 pb-4 cover">
             <div class="media align-items-end profile-head">
-               <div class="profile mr-3"><img src="<?php echo $profile;?>" alt="..." width="130" class="rounded mb-2 img-thumbnail"><a href="#" class="btn btn-outline-dark btn-sm btn-block">
+               <div class="profile mr-3">
+                  <img src="<?php echo $profile;?>" alt="..." width="130" class="rounded mb-2 img-thumbnail">
+               <a href="#" class="btn btn-outline-dark btn-sm btn-block">
                   <?php
                      if ( is_user_logged_in() ) {
                          echo "Edit profile";
@@ -86,9 +91,13 @@ $profile = get_avatar_url($userId);
                       }
                       ?>
                   </a>
+
+                  
                   
                </div>
+               
                <div class="media-body mb-5 text-white">
+               
                   <h4 class="mt-0 mb-0">
                      <?php
                         if ( $name ){
@@ -142,6 +151,18 @@ $profile = get_avatar_url($userId);
             </ul>
          </div>
          <div class="px-4 py-3">
+         <button type="button" class="btn btn-primary">
+                        <?php 
+                         if ( $userLevel ){
+                           the_field('User Level', 'user_' . $author_id);
+                       }
+                       else
+                       {
+                       echo "Unknown";
+                       }
+                       ?>
+
+         </button>
             <h5 class="mb-0">About</h5>
             <div class="p-4 rounded shadow-sm bg-light">
             <input type="text" value="<?php the_permalink();?>" id="myInput">

@@ -35,30 +35,20 @@
             </div>
             <div class="collapse navbar-collapse" id="main-navbar">
                <ul class="navbar-nav mr-auto w-100 justify-content-center">
-                  <li class="nav-item  active">
-                     <a class="nav-link" href="http://localhost/empirelisting/"  aria-haspopup="true" aria-expanded="false">
-                     Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="http://localhost/empirelisting/all-listings/"  aria-haspopup="true" aria-expanded="false">
-                     All Listings</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="http://localhost/empirelisting/about-us/"  aria-haspopup="true" aria-expanded="false">
-                     About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="http://localhost/empirelisting/faq/"  aria-haspopup="true" aria-expanded="false">
-                     FAQ</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="http://localhost/empirelisting/blog/"  aria-haspopup="true" aria-expanded="false">
-                     Blog</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="http://localhost/empirelisting/contact-us/"  aria-haspopup="true" aria-expanded="false">
-                     Contact Us</a>
-                  </li>
+               <?php
+        
+        wp_nav_menu( array(
+            'theme_location'    => 'primary',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+        ) );
+        ?>
+                  
                </ul>
                <div class="post-btn">
                   <a class="btn btn-common" href="http://localhost/empirelisting/post-book/"><i class="lni-pencil-alt"></i> Post an book</a>

@@ -33,21 +33,61 @@
                <div id="owl-demo" class="owl-carousel owl-theme">
                   <div class="item">
                      <div class="product-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/productinfo/img1.jpg" alt="">
+
+
+                     <?php 
+$image1 = get_field('Slider Image: 01');
+if( !empty( $image1 ) ): ?>
+    <img class="img-fluid" src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" />
+<?php endif; ?>
                      </div>
-                     <span class="price">$1,550</span>
+                     <span class="price">
+
+                     <?php 
+                     $price = get_field('price');
+if( !empty( $price ) ):
+   echo "Rs. " ;
+   the_field('price');
+ endif; ?>     
+
+                     </span>
                   </div>
                   <div class="item">
                      <div class="product-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/productinfo/img3.jpg" alt="">
+                     <?php 
+$image2 = get_field('Slider Image: 02');
+if( !empty( $image2 ) ): ?>
+    <img class="img-fluid" src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" />
+<?php endif; ?>
                      </div>
-                     <span class="price">$1,550</span>
+                     <span class="price">
+                     <?php 
+                     $price = get_field('price');
+if( !empty( $price ) ):
+   echo "Rs. " ;
+   the_field('price');
+ endif; ?>     
+
+                     </span>
                   </div>
                   <div class="item">
                      <div class="product-img">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/productinfo/img2.jpg" alt="">
+                     <?php 
+$image3 = get_field('Slider Image: 03');
+if( !empty( $image3 ) ): ?>
+    <img class="img-fluid" src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" />
+<?php endif; ?>
+                       
                      </div>
-                     <span class="price">$1,550</span>
+                     <span class="price">
+                     <?php 
+                     $price = get_field('price');
+if( !empty( $price ) ):
+   echo "Rs. " ;
+   the_field('price');
+ endif; ?>     
+                  
+                  </span>
                   </div>
                </div>
             </div>
@@ -86,6 +126,15 @@
                      }
                   </script>
                   </p>
+                     <?php
+                     
+                     // If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+                     ?>
+
                </div>
                <div class="tag-bottom">
                   <div class="float-left">
@@ -143,6 +192,8 @@
                         <button class="btn btn-common fullwidth mt-4">Send Message</button> -->
                   </div>
                </div>
+
+
                <div class="widget">
                   <h4 class="widget-title">More Ads From Seller</h4>
 

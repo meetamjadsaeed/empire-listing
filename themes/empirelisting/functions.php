@@ -883,14 +883,67 @@ add_filter( 'posts_distinct', 'cf_search_distinct' );
  * Register Custom Navigation Walker
  */
 
-  if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.php' ) ) {
+  if ( ! file_exists( get_template_directory() . '/wp-bootstrap-navwalker-master/class-wp-bootstrap-navwalker.php' ) ) {
     // File does not exist... return an error.
     return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
 } else {
     // File exists... require it.
-    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+    require_once get_template_directory() . '/wp-bootstrap-navwalker-master/class-wp-bootstrap-navwalker.php';
 }
 
+// Expire books with cron functionility
+// add_action( 'expire_ads_cron', 'cw_function' );
+function cw_function() {
+
+	$Object = new DateTime();  
+    $Object->setTimezone(new DateTimeZone('Europe/Amsterdam'));
+    $DateAndTime = $Object->format("d/m/Y");  
+    // echo "The current date and time in Amsterdam are $DateAndTime.\n";
+    // echo "expire is $expire.\n";
+    
+    // echo $DateAndTime."<br>";
+    // echo $expire."<br>";
+
+
+$posts = get_posts(array(
+	'posts_per_page'	=> -1,
+	'post_type'			=> 'book',
+  'post_status' => 'Publish'
+));
+
+if( $posts ):
+	
+	
+		
+foreach( $posts as $post ): 
+  $post_ID = get_the_ID();
+		setup_postdata( $post );
+
+    $expire = get_field('Expire');
+    
+    if(strcmp($expire, $DateAndTime) == 0):
+    
+      // Update post
+    $my_post = array(
+      'ID'           => $post_ID,
+      'post_status' => 'Draft',
+      'post_content' => 'This is Post has been expired',
+    );
+    
+    // Update the post into the database
+    wp_update_post( $my_post );
+    endif;
+
+			
+	endforeach;
+	
+	
+	
+	wp_reset_postdata(); 
+
+ endif;
+
+}
   
 //ACTIVE
 //INACTIVE

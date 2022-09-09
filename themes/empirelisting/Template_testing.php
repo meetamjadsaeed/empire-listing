@@ -45,57 +45,119 @@ get_header();
 <br><br><br>
 <h1> this is testing section </h1>
 
-
 <?php 
 
+// $Object = new DateTime();  
+//     $Object->setTimezone(new DateTimeZone('Europe/Amsterdam'));
+//     $DateAndTime = $Object->format("d/m/Y");  
+//     // echo "The current date and time in Amsterdam are $DateAndTime.\n";
+//     // echo "expire is $expire.\n";
+    
+//     // echo $DateAndTime."<br>";
+//     // echo $expire."<br>";
+
+
+// $posts = get_posts(array(
+// 	'posts_per_page'	=> -1,
+// 	'post_type'			=> 'book',
+//   'post_status' => 'Publish'
+// ));
+
+// if( $posts ):
+	
+	
+		
+// foreach( $posts as $post ): 
+//   $post_ID = get_the_ID();
+// 		setup_postdata( $post );
+
+//     $expire = get_field('Expire');
+    
+//     if(strcmp($expire, $DateAndTime) == 0):
+    
+//       // Update post
+//     $my_post = array(
+//       'ID'           => $post_ID,
+//       'post_status' => 'Draft',
+//       'post_content' => 'This is Post has been expired',
+//     );
+    
+//     // Update the post into the database
+//     wp_update_post( $my_post );
+//     endif;
+
+			
+// 	endforeach;
+	
+	
+	
+// 	wp_reset_postdata(); 
+
+//  endif; 
+
+?>
+<?php 
+
+
+
+// echo $check = (strcmp($expire, $DateAndTime) == 0) ? "expired" : "not expired";
+
+
+
+
+
+// if ($DateAndTime === $expire)? "expired":"not expired";
+
+
+
 // Start get all emails with status requests a book
-$name = "sdfsd";
-$posts = get_posts(array(
-  'posts_per_page'	=> -1,
-  "s" => $name,
-  'post_type'		=> 'book',
-   'post_status' => 'publish',
-  'meta_key'		=> 'Book Status', // Query all emails where the status has requested a book
-  'meta_value'	=> 'Sell'
-));
-$currenTittle = get_permalink(619); //  save it in curenttitile variable
+// $name = "sdfsd";
+// $posts = get_posts(array(
+//   'posts_per_page'	=> -1,
+//   "s" => $name,
+//   'post_type'		=> 'book',
+//    'post_status' => 'publish',
+//   'meta_key'		=> 'Book Status', // Query all emails where the status has requested a book
+//   'meta_value'	=> 'Sell'
+// ));
+// $currenTittle = get_permalink(619); //  save it in curenttitile variable
 
-if( $posts ):
+// if( $posts ):
 
-   foreach( $posts as $post ): 
+//    foreach( $posts as $post ): 
 
-    // $posttitle = 'sdfsd';
-    // $postid = $wpdb->get_results( "SELECT ID FROM $wpdb->posts WHERE post_title = '" . $posttitle . "'" );
-
-
+//     // $posttitle = 'sdfsd';
+//     // $postid = $wpdb->get_results( "SELECT ID FROM $wpdb->posts WHERE post_title = '" . $posttitle . "'" );
 
 
-    $email =  get_field('email'); 
-    global $subscribers;
-    $email =  get_field('email');//some processing here to determine value of $myVal
-    $subscribers = array($email);
 
-// $subscribers = array($email);  // save those emails in the subscriber variable
 
-    foreach ($subscribers as $sub)
-    {
-      // $subject = "New Book Has ben added";
-      // $message     = sprintf( 'We\'ve added a new book, %s. Click <a href="%s">here</a> to see the book', $postlink, get_permalink( $post ) );
+//     $email =  get_field('email'); 
+//     global $subscribers;
+//     $email =  get_field('email');//some processing here to determine value of $myVal
+//     $subscribers = array($email);
+
+// // $subscribers = array($email);  // save those emails in the subscriber variable
+
+//     foreach ($subscribers as $sub)
+//     {
+//       // $subject = "New Book Has ben added";
+//       // $message     = sprintf( 'We\'ve added a new book, %s. Click <a href="%s">here</a> to see the book', $postlink, get_permalink( $post ) );
       
-      echo "<p>".$sub."</p><br>";
+//       echo "<p>".$sub."</p><br>";
 
-      $subject = "New Book Has ben added ";
-      $message     = sprintf( 'We\'ve added a new book, %s. Click <a href="%s">here</a> to see the book', $currenTittle, $currenTittle );
+//       $subject = "New Book Has ben added ";
+//       $message     = sprintf( 'We\'ve added a new book, %s. Click <a href="%s">here</a> to see the book', $currenTittle, $currenTittle );
       
-      // wp_mail( $sub, $subject, $message );
+//       // wp_mail( $sub, $subject, $message );
 
-    }
+//     }
   
-   endforeach;
+//    endforeach;
   
-  wp_reset_postdata();
+//   wp_reset_postdata();
 
-endif;
+// endif;
 // End get all emails with status requests a book
 ?>
 

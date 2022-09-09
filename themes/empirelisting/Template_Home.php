@@ -251,14 +251,30 @@ $the_query = new WP_Query( $args );
                      <a href="#"><i class="lni-tag"></i> <?php the_category(); ?></a>
                      </span>
                   </div>
+                  <p><b>With Discount <?php the_field('Discount'); ?>%</b></p>
                   <p><?php $my_date = the_date( '', '<P>', '</P>', false );
 echo 'Posted On '.$my_date; ?></p>
                   <p class="dsc"><?php the_excerpt(); ?></p>
                 
-                  <div class="listing-bottom">
-                    <?php if(   get_field('price') ): ?> 
-                     <h3 class="price float-left">Rs.<?php the_field('price'); ?></h3>
-                     <?php endif; ?>
+                  <div class="listing-bottom"> 
+                     <h3 class="price float-left">Rs.
+                     <?php 
+                     $discount = get_field('Discount');
+                     $price = get_field('Discount');
+                     
+                     if( get_field('Discount') )
+                           {
+                              echo $price -( ($price * $discount )/100 ); 
+                           }
+                           else
+                           {
+                              the_field('price');
+                           }
+
+                           ?>
+
+
+                     </h3>
                      <a href="<?php the_permalink(); ?>" class="btn btn-common float-right">View Details</a>
                   </div>
                </div>
