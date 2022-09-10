@@ -160,6 +160,7 @@ $lon = $geoPluginAPI['geoplugin_longitude'];
 // var_dump($lon);
 $latlo2loc = unserialize(file_get_contents('http://www.geoplugin.net/extras/location.gp?lat='.$lat.'&lon='.$lon.'&format=php'));
 $place = $latlo2loc['geoplugin_place'];
+$currencySymbol = $geoPluginAPI['geoplugin_currencySymbol'];
 ?>
 <section class="featured section-padding">
 <!-- <a href="<?php echo esc_url( get_permalink(613) ); ?>"><?php esc_html_e( 'Testing', 'textdomain' ); ?></a> -->
@@ -257,7 +258,16 @@ echo 'Posted On '.$my_date; ?></p>
                   <p class="dsc"><?php the_excerpt(); ?></p>
                 
                   <div class="listing-bottom"> 
-                     <h3 class="price float-left">Rs.
+                     <h3 class="price float-left"><?php 
+                     if(!empty(get_field('Currency Symbol')))
+                     {
+                        the_field('Currency Symbol');
+                     }
+                     else
+                     {
+                        echo $currencySymbol;
+                     }
+                     ?>
                      <?php 
                      $discount = get_field('Discount');
                      $price = get_field('Discount');

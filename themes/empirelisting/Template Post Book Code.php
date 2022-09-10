@@ -432,7 +432,9 @@ echo $geoPluginAPI['geoplugin_region'];
 <label class="custom-control-label" for="tg-agreetermsandrules">I agree to all <a href="javascript:void(0);">Terms of Use &amp; Posting Rules</a></label>
 </div>
 </div>
+
 <button class="btn btn-common" type="submit" value="Publish" id="submit" name="submit" >Post Ad</button>
+
 </div>
 </div>
 </div>
@@ -579,10 +581,15 @@ function themedomain_post_if_submitted() {
   // Save a Book Status value.
   $field_key = "field_630a348fc2537";
   update_field( $field_key, $_POST['status'], $post_id );
-
-
+    
+  echo 'Saved your post successfully! :)';
+  // wp_safe_redirect()
+  // wp_safe_redirect(add_query_arg( array( 'listingID' => $post_id ), 301 ));
+  // echo wp_safe_redirect( add_query_arg( array( 'listingID' => $post_id ), admin_url( 'http://localhost/empirelisting/packages/' ) ) );
   
+  $paramters = array( 'postID' => $post_id );
+  $passedURL = add_query_arg( $paramters, 'http://localhost/empirelisting/shop/' );
 
-
-    echo 'Saved your post successfully! :)';
+  redirect($passedURL);
+  
 } ?>

@@ -945,7 +945,89 @@ foreach( $posts as $post ):
 
 }
 
+// Prevent images larger than 200kb from being uploaded.
+// function waterMark( $file ) {
   
+//            // Load the stamp and the photo to apply the watermark to
+// $stamp = imagecreatefrompng('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+// $im = imagecreatefromjpeg($file);
+
+// // Set the margins for the stamp and get the height/width of the stamp image
+// $marge_right = 10;
+// $marge_bottom = 10;
+// $sx = imagesx($stamp);
+// $sy = imagesy($stamp);
+
+// // Copy the stamp image onto our photo using the margin offsets and the photo 
+// // width to calculate positioning of the stamp. 
+// imagecopy($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp));
+
+// // Output and free memory
+// header('Content-type: image/png');
+// imagepng($im);
+// imagedestroy($im);
+           
+//             return $file;
+// }
+// add_filter( 'wp_handle_upload_prefilter', 'waterMark' );
+
+
+// add_action( 'template_redirect', 'redirect_to_other_page' );
+// function redirect_to_other_page() {
+//   if(isset($_POST['submit'])){
+	  
+//       wp_redirect( "example.com", 301 );
+//       ///wp_redirect( 'example.com/page', 301 ); 
+//     exit;
+//     }
+// }
+
+// function my_function_on_save_post( $post_id ) {
+
+// 	// Find parent post_id.
+//   wp_redirect( "example.com", 301 );
+
+// 	// Do something.
+
+// }
+// add_action( 'save_post', 'my_function_on_save_post' );
+
+
+// function my_function_on_save_post( $post_id ) {
+
+// 	// Find parent post_id.
+//   wp_redirect( "example.com", 301 );
+
+// 	// Do something.
+
+// }
+// do_action( 'wp_insert_post', 'my_function_on_save_post' );
+
+// redirect to new page
+function redirect($url){
+  $string = '<script type="text/javascript">';
+  $string .= 'window.location = "' . $url . '"';
+  $string .= '</script>';
+  echo $string;
+}
+
+// limit to cart only one product
+add_filter( 'woocommerce_add_to_cart_validation', 'only_one_item_in_cart', 9999, 2 );
+   
+function only_one_item_in_cart( $passed, $added_product_id ) {
+   wc_empty_cart();
+   return $passed;
+}
+
+// skip cart page woocommerce
+add_filter('add_to_cart_redirect', 'lw_add_to_cart_redirect');
+function lw_add_to_cart_redirect() {
+ global $woocommerce;
+ $lw_redirect_checkout = $woocommerce->cart->get_checkout_url();
+ return $lw_redirect_checkout;
+}
+
+
 //ACTIVE
 //INACTIVE
 //SOLD

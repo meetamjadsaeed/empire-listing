@@ -1,0 +1,187 @@
+2022-09-10T12:47:23+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\Template_Home.php on line 269
+
+2022-09-10T13:52:48+00:00 CRITICAL Uncaught TypeError: file_put_contents(): Argument #1 ($filename) must be of type string, array given in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php:952
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(952): file_put_contents(Array, NULL)
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): waterMark(Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(802): apply_filters('wp_handle_uploa...', Array)
+#4 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(1074): _wp_handle_upload(Array, Array, '2022-09-10 13:5...', 'wp_handle_uploa...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\media.php(303): wp_handle_upload(Array, Array, '2022-09-10 13:5...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\ajax-actions.php(2569): media_handle_upload('async-upload', NULL, Array)
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\async-upload.php(33): wp_ajax_upload_attachment()
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 952
+
+2022-09-10T13:53:24+00:00 CRITICAL Uncaught TypeError: file_put_contents(): Argument #1 ($filename) must be of type string, array given in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php:952
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(952): file_put_contents(Array, NULL)
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): waterMark(Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(802): apply_filters('wp_handle_uploa...', Array)
+#4 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(1074): _wp_handle_upload(Array, Array, '2022-09-10 13:5...', 'wp_handle_uploa...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\media.php(303): wp_handle_upload(Array, Array, '2022-09-10 13:5...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\ajax-actions.php(2569): media_handle_upload('async-upload', NULL, Array)
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\async-upload.php(33): wp_ajax_upload_attachment()
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 952
+
+2022-09-10T13:54:54+00:00 CRITICAL Uncaught TypeError: file_put_contents(): Argument #1 ($filename) must be of type string, array given in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php:952
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(952): file_put_contents(Array, NULL)
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): waterMark(Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(802): apply_filters('wp_handle_uploa...', Array)
+#4 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(1074): _wp_handle_upload(Array, Array, '2022-09-10 13:5...', 'wp_handle_uploa...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\media.php(303): wp_handle_upload(Array, Array, '2022-09-10 13:5...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\ajax-actions.php(2569): media_handle_upload('async-upload', NULL, Array)
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\async-upload.php(33): wp_ajax_upload_attachment()
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 952
+
+2022-09-10T13:57:12+00:00 CRITICAL Uncaught Error: Call to undefined function imagecreatefrompng() in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php:952
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): waterMark(Array)
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(802): apply_filters('wp_handle_uploa...', Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\file.php(1074): _wp_handle_upload(Array, Array, '2022-09-10 13:5...', 'wp_handle_uploa...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\media.php(303): wp_handle_upload(Array, Array, '2022-09-10 13:5...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-admin\includes\ajax-actions.php(2569): media_handle_upload('async-upload', NULL, Array)
+#6 C:\xamppfyp\htdocs\empirelisting\wp-admin\async-upload.php(33): wp_ajax_upload_attachment()
+#7 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php on line 952
+
+2022-09-10T17:31:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ACF_Form_Post::save_post(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php:301
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): ACF_Form_Post->save_post('redirect_to_oth...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(976): do_action('save_post', 'redirect_to_oth...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(13): require_once('C:\\xamppfyp\\htd...')
+#8 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#9 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php on line 301
+
+2022-09-10T17:31:30+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ACF_Form_Post::save_post(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php:301
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): ACF_Form_Post->save_post('redirect_to_oth...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(976): do_action('save_post', 'redirect_to_oth...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\admin-ajax.php(22): require_once('C:\\xamppfyp\\htd...')
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php on line 301
+
+2022-09-10T17:32:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ACF_Form_Post::save_post(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php:301
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): ACF_Form_Post->save_post('redirect_to_oth...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(976): do_action('save_post', 'redirect_to_oth...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\admin-ajax.php(22): require_once('C:\\xamppfyp\\htd...')
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php on line 301
+
+2022-09-10T17:32:39+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ACF_Form_Post::save_post(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php:301
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): ACF_Form_Post->save_post('redirect_to_oth...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(976): do_action('save_post', 'redirect_to_oth...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(13): require_once('C:\\xamppfyp\\htd...')
+#8 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#9 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php on line 301
+
+2022-09-10T17:32:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ACF_Form_Post::save_post(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php:301
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): ACF_Form_Post->save_post('redirect_to_oth...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(976): do_action('save_post', 'redirect_to_oth...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(13): require_once('C:\\xamppfyp\\htd...')
+#8 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#9 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php on line 301
+
+2022-09-10T17:33:21+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ACF_Form_Post::save_post(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php:301
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): ACF_Form_Post->save_post('redirect_to_oth...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(976): do_action('save_post', 'redirect_to_oth...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\admin-ajax.php(22): require_once('C:\\xamppfyp\\htd...')
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php on line 301
+
+2022-09-10T17:33:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ACF_Form_Post::save_post(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php:301
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): ACF_Form_Post->save_post('redirect_to_oth...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(976): do_action('save_post', 'redirect_to_oth...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\admin-ajax.php(22): require_once('C:\\xamppfyp\\htd...')
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\advanced-custom-fields\includes\forms\form-post.php on line 301
+
+2022-09-10T17:43:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Yoast\WP\Duplicate_Post\Post_Republisher::republish_after_post_request(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\duplicate-post\src\post-republisher.php:173
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): Yoast\WP\Duplicate_Post\Post_Republisher->republish_after_post_request('my_function_on_...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(1004): do_action('wp_insert_post', 'my_function_on_...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\admin-ajax.php(22): require_once('C:\\xamppfyp\\htd...')
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\duplicate-post\src\post-republisher.php on line 173
+
+2022-09-10T17:43:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Yoast\WP\Duplicate_Post\Post_Republisher::republish_after_post_request(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\duplicate-post\src\post-republisher.php:173
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): Yoast\WP\Duplicate_Post\Post_Republisher->republish_after_post_request('my_function_on_...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(1004): do_action('wp_insert_post', 'my_function_on_...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-admin\admin-ajax.php(22): require_once('C:\\xamppfyp\\htd...')
+#8 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\duplicate-post\src\post-republisher.php on line 173
+
+2022-09-10T17:43:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Yoast\WP\Duplicate_Post\Post_Republisher::republish_after_post_request(), 1 passed in C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php on line 307 and exactly 2 expected in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\duplicate-post\src\post-republisher.php:173
+Stack trace:
+#0 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(307): Yoast\WP\Duplicate_Post\Post_Republisher->republish_after_post_request('my_function_on_...')
+#1 C:\xamppfyp\htdocs\empirelisting\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\xamppfyp\htdocs\empirelisting\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\xamppfyp\htdocs\empirelisting\wp-content\themes\empirelisting\functions.php(1004): do_action('wp_insert_post', 'my_function_on_...')
+#4 C:\xamppfyp\htdocs\empirelisting\wp-settings.php(566): include('C:\\xamppfyp\\htd...')
+#5 C:\xamppfyp\htdocs\empirelisting\wp-config.php(96): require_once('C:\\xamppfyp\\htd...')
+#6 C:\xamppfyp\htdocs\empirelisting\wp-load.php(50): require_once('C:\\xamppfyp\\htd...')
+#7 C:\xamppfyp\htdocs\empirelisting\wp-blog-header.php(13): require_once('C:\\xamppfyp\\htd...')
+#8 C:\xamppfyp\htdocs\empirelisting\index.php(17): require('C:\\xamppfyp\\htd...')
+#9 {main}
+  thrown in C:\xamppfyp\htdocs\empirelisting\wp-content\plugins\duplicate-post\src\post-republisher.php on line 173
+
