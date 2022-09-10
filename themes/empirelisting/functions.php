@@ -1019,7 +1019,7 @@ function only_one_item_in_cart( $passed, $added_product_id ) {
    return $passed;
 }
 
-// skip cart page woocommerce
+//  skip cart page woocommerce
 add_filter('add_to_cart_redirect', 'lw_add_to_cart_redirect');
 function lw_add_to_cart_redirect() {
  global $woocommerce;
