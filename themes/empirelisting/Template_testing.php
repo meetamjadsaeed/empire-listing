@@ -47,9 +47,78 @@ get_header();
 
 <?php 
 
-$author = get_the_author_meta('display_name', $author_id);
+$count = 0;
+$user = wp_get_current_user();
 
-echo "author: $author";
+$posts = get_posts(array(
+	'posts_per_page'	=> -1,
+	'post_type'			=> 'product',
+  'author' => $user->ID
+));
+
+if( $posts ): ?>
+	
+	<ul>
+		
+	<?php foreach( $posts as $post ): 
+		
+		setup_postdata( $post );
+		$count++;
+		?>
+		<li>
+			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		</li>
+    
+	<?php endforeach; ?>
+	
+	</ul>
+	
+	<?php wp_reset_postdata(); ?>
+
+<?php endif; 
+
+echo "user role is $user->roles[0] <br>";
+echo "user ID is $user->ID <br>";
+echo "Total are $count Listings<br>";
+$orders = wc_get_orders( array('numberposts' => -1,'author' => $user->ID) );
+
+// Loop through each WC_Order object
+foreach( $orders as $order ){
+    echo $order->get_id() . '<br>'; // The order ID
+    $product_details = array();
+$order_items = $order->get_items();
+
+foreach( $order_items as $product ) {
+          $listings = get_field('listings:',$order->get_id());
+                $product_details[] = $product['name']."x".$product['qty'];
+            }
+
+            $product_list = implode( ',', $product_details );
+            echo $product_list."<br>";
+    //         echo $order->get_status() . '<br>'; // The order status
+    // echo $order->get_user_id() . '<br>'; // The order user
+              if($product['name'] == "Package STANDARD")
+              {
+                if($count < $listings )
+                {
+                echo "You are allow to post new lisitng";
+                // echo $listings;
+                }
+                else
+                {
+                  echo "Please Upgrade your package";
+                }
+              }
+  }
+
+// $order = wc_get_order( $order_id );
+// $user = $order->get_user(); 
+
+
+
+// $author = get_the_author_meta('display_name', $author_id);
+
+// echo "author: $author";
 
 
 ?>
